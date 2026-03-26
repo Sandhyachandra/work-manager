@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Work Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="loginContainer">
+  <div id="loginBox" class="login-card">
+    <h2>🔐 Login</h2>
+    <input id="email" placeholder="Enter Email">
+    <input id="password" type="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="appContainer" class="hidden">
+
+  <h1>🚀 Work Management System</h1>
+
+  <!-- ADMIN PANEL -->
+  <div id="adminPanel" class="hidden">
+    <h2>👑 Admin Dashboard</h2>
+
+    <input id="name" placeholder="Name">
+    <input id="email2" placeholder="Email">
+    <input id="pass2" placeholder="Password">
+    <button onclick="createUser()">Create</button>
+
+    <input id="title" placeholder="Title">
+    <input id="priority" placeholder="Priority">
+    <button onclick="createWork()">Create</button>
+
+    <div id="allWorks"></div>
+  </div>
+
+  <!-- MEMBER PANEL -->
+  <div id="memberPanel" class="hidden">
+    <h2>👤 Member Dashboard</h2>
+    <div id="myWorks"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
